@@ -33,9 +33,14 @@ android {
         }
     }
 
+    flavorDimensions "extensions"
     productFlavors {
-        noExtensions
-        withExtensions
+        noExtensions {
+            dimension "extensions"
+        }
+        withExtensions {
+            dimension "extensions"
+        }
     }
 }
 
